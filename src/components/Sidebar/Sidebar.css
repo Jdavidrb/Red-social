@@ -1,0 +1,16 @@
+/* Sidebar.css */
+aside {
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    width: 200px;
+  }
+  
+  aside ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  aside ul li {
+    margin-bottom: 10px;
+  }

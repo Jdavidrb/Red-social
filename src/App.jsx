@@ -1,11 +1,13 @@
-import './App.css'
+import React from 'react';
+import './App.css';
+import Home from './pages/Home'; // Importa el componente Home
 
 function App() {
   return (
     <div className='App'>
-      <h1>Hola Grafito</h1>
+      <Home /> {/* Renderiza el componente Home */}
     </div>
   );
 }
 
-export default App
+export default App;
