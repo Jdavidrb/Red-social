@@ -1,6 +1,6 @@
 /* Header.css */
 header {
-  background-color: #f6f7f8;
+  background-color: #ffffff;
   color: #121417;
   padding: 10px 20px;
   display: flex;
@@ -8,22 +8,23 @@ header {
   align-items: center;
   width: 100%;
   box-sizing: border-box;
-  border-bottom: 3px solid #666262; /* Línea en la parte inferior */
+  border-bottom: 1px solid #e5e8eb; /* Línea en la parte inferior */
 }
 
 header .logo {
   display: flex;
   align-items: center;
   padding: 1px;
+  margin-left: 80px;
 }
 
 header .logo img {
-  height: 20px;
+  height: 25px;
   margin-right: 10px;
 }
 
 header .logo span {
-  font-size: 1.5em;
+  font-size: 2.0em;
   font-weight: bold;
 }
 
@@ -33,22 +34,20 @@ header .actions {
 }
 
 header .actions button {
-  background-color: #ccc; /* Fondo gris para los botones */
+  background-color: #F0F2F5; /* Fondo gris para los botones */
   border: none;
   padding: 10px;
-  margin-left: 10px;
-  border-radius: 50%;
+  margin-left: 20px;
+
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
 }
 
-
-
 header .actions .profile-img {
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  margin-left: 10px;
+  margin-left: 20px;
 }

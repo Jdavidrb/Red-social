@@ -1,16 +1,21 @@
 /* Sidebar.css */
 aside {
-    background-color: #343a40;
-    color: white;
+    background-color: #ffffff;
+    color: #0D141C;
     padding: 20px;
+    padding-right: 30px;
     width: 200px;
+    margin-top: 50px;
+    font-size: 1.2em;
+    margin-bottom: 1100px;
   }
   
   aside ul {
     list-style: none;
-    padding: 0;
+    padding: 10px;
+    background-color: #ffffff;
   }
   
-  aside ul li {
-    margin-bottom: 10px;
+  aside ul li { /* cajita de cada seleccion */
+    margin-bottom: 30px;
   }
