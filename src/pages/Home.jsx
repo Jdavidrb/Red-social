@@ -13,7 +13,7 @@ function Home() {
         <Sidebar />
         <MainContent />
       </div>
-      <Footer />
+  
     </div>
   );
 }
