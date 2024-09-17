@@ -1,7 +1,8 @@
 .card {
+    width: 300px;
+    height: 200px;
     border: 1px solid #ddd;
     border-radius: 8px;
-    overflow: hidden;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
   }
@@ -9,18 +10,14 @@
   .card:hover {
     transform: scale(1.05);
   }
-  
-  .card-image {
-    width: 100%;
-    height: auto;
-  }
+
   
   .card-content {
-    padding: 16px;
+    padding:0px;
   }
   
   .card-content h3 {
-    margin: 0 0 8px;
+    margin: 0 0 0px;
   }
   
   .card-content p {

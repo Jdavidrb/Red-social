@@ -8,7 +8,12 @@
 
   /* Fondo blanco para la página Home */
 }
-
+.content-home{
+  margin-top: 100px;
+  display : flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
 
 
 

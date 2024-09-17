@@ -6,10 +6,14 @@ import Explore from './pages/Explore';
 import Create from './pages/Create';
 import Profile from './pages/Profile';
 import Sidebar from './components/Sidebar/Sidebar';
+import Header  from './components/Header/Header';
 
 function App() {
   return (
     <Router>
+      <div>
+        <Header />
+      </div>
       <div className='App'>
         <Sidebar />
         <div className='content-app'>
