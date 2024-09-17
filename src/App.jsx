@@ -12,7 +12,7 @@ function App() {
     <Router>
       <div className='App'>
         <Sidebar />
-        <div className='content'>
+        <div className='content-app'>
           <Routes>
             <Route path="/" exact = {true} element={<Home />} />
             <Route path="/explore" exact = {true}  element={<Explore />} />
