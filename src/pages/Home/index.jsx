@@ -1,8 +1,7 @@
 import React from 'react';
-import Header from '../components/Header/Header';
-import Sidebar from '../components/Sidebar/Sidebar';
-import MainContent from '../components/MainContent/MainContent';
-import Footer from '../components/Footer/Footer';
+import Header from '../../components/Header/Header';
+import Sidebar from '../../components/Sidebar/Sidebar';
+import MainContent from '../../components/MainContent/MainContent';
 import './Home.css'; // Importa el archivo CSS
 
 function Home() {
@@ -10,10 +9,8 @@ function Home() {
     <div className='Home'>
       <Header />
       <div className='content'>
-        <Sidebar />
         <MainContent />
       </div>
-  
     </div>
   );
 }
