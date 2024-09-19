@@ -1,6 +1,9 @@
 import React from 'react';
 import './Profile.css';
 import profileImage from '../../assets/images/profile-image.png';
+import Label from '../../components/Label/Label'; // Ajusta la ruta según tu estructura de proyecto
+import Card from '../../components/Card/Card'; // Importa el componente Card
+import projectImage from '../../assets/images/project2.png'; // Importa una imagen para los proyectos
 
 function Profile() {
   return (
@@ -28,10 +31,39 @@ function Profile() {
       <div className='projects-section'>
         <h2>Projects</h2>
         <div className='projects'>
-          <div className='project-card'>Project</div>
-          <div className='project-card'>Project</div>
-          <div className='project-card'>Project</div>
-          <div className='project-card'>Project</div>
+          <Card 
+            title="Project Alpha" 
+            members={5} 
+            dueDate="2 days" 
+            image={projectImage} 
+            width="190px" 
+            height="170px" 
+          />
+          <Card 
+            title="Project Beta" 
+            members={3} 
+            dueDate="1 week" 
+            image={projectImage}
+            width="190px" 
+            height="170px" 
+          />
+          <Card 
+            title="Project Beta" 
+            members={3} 
+            dueDate="1 week" 
+            image={projectImage}
+            width="190px" 
+            height="170px" 
+          />
+          <Card 
+            title="Project Beta" 
+            members={3} 
+            dueDate="1 week" 
+            image={projectImage}
+            width="190px" 
+            height="170px" 
+          />
+          
         </div>
       </div>
 
@@ -39,11 +71,11 @@ function Profile() {
       <div className='skills-section'>
         <h2>Skills</h2>
         <div className='skills'>
-          <div className='skill'>Product Design</div>
-          <div className='skill'>UI/UX Design</div>
-          <div className='skill'>Design Systems</div>
-          <div className='skill'>Prototyping</div>
-          <div className='skill'>User Research</div>
+          <Label text="Product Design" width="120px" height="30px" />
+          <Label text="UI/UX Design" width="100px" height="30px" />
+          <Label text="Design Systems" width="130px" height="30px" />
+          <Label text="Prototyping" width="100px" height="30px" />
+          <Label text="User Research" width="120px" height="30px" />
         </div>
       </div>
 

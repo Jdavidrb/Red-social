@@ -1,6 +1,5 @@
 /* Header.css */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 header {
   color: #121417;
   padding: 30px 20px;
@@ -27,7 +26,6 @@ header .logo img {
 header .logo span {
   font-size: 2.0em;
   font-weight: bold;
-  font-family: 'Inter', sans-serif;
 }
 
 header .actions {
