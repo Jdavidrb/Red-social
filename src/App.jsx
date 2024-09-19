@@ -4,7 +4,7 @@ import './App.css';
 import Home from './pages/Home';
 import Explore from './pages/Explore';
 
-import Profile from './pages/Profile';
+import Profile from './pages/Profile/Profile';
 import Sidebar from './components/Sidebar/Sidebar';
 import Header  from './components/Header/Header';
 import Create from './pages/Create';
