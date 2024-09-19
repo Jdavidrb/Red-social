@@ -8,11 +8,19 @@
 
   /* Fondo blanco para la página Home */
 }
-.content-home{
-  margin-top: 100px;
+.my-projects{
   display : flex;
   gap: 20px;
   flex-wrap: wrap;
+  margin-left: 120px;
+}
+
+.title{
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-top: 60px;
+  margin-bottom: 50px;
 }
 
 .Create {
