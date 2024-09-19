@@ -12,11 +12,12 @@
   display : flex;
   gap: 20px;
   flex-wrap: wrap;
-  margin-left: 120px;
+  margin-left: 100px;
 }
 
 .title{
   text-align: center;
+  margin-right: 120px;
   font-size: 2.5em;
   font-weight: bold;
   margin-top: 60px;
