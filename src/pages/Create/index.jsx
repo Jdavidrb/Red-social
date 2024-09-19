@@ -14,7 +14,7 @@ function Create() {
           <CustomInput 
             type='text' 
             width='400px' 
-            height='60px' 
+            height='10px' 
             placeholder='Project Name' 
             isTextarea={true}
           />
@@ -23,7 +23,7 @@ function Create() {
           <CustomInput 
             type='text' 
             width='400px' 
-            height='100px' 
+            height='140px' 
             placeholder='Description' 
             isTextarea={true}
           />
