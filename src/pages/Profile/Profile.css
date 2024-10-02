@@ -1,0 +1,150 @@
+.Profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff; 
+    color: #333;
+    padding: 20px;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.profile-picture {
+    width: 100px; /*Ajusta el tamaño de la imagen según sea necesario */
+    height: 100px; /*Mantén la proporción de la imagen */
+    border-radius: 50%; /*Redondea la imagen */
+    object-fit: cover; /*Asegura que la imagen se ajuste sin deformarse */
+    margin-right: -370px; /*Espacio entre la imagen y el texto */
+    margin-left: 150px;
+}
+
+.profile-info {
+    flex-grow: 1;
+}
+
+.profile-info h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #121417;
+}
+
+.profile-info p {
+    margin: 5px 0 0;
+    color: #666;
+}
+
+.profile-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.invite-button, .message-button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.invite-button {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.message-button {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.projects-section, .skills-section, .work-experience-section {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill {
+    background-color: #F0F2F5; /*Fondo gris claro*/
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 50px; /*Bordes redondeados circulares*/
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.skill:hover {
+    background-color: #d9dce1;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.project-card {
+    background-color: #fff;
+    padding: 20px;
+    flex: 1;
+    margin: 5px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.work-experience-section {
+    background-color: #F0F2F5; /*Fondo gris claro para toda la sección*/
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.work-experience {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.work-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+    position: relative; 
+}
+
+.work-item .icon {
+    font-size: 18px;
+    margin-right: 20px; /*Espacio entre el ícono y el texto*/
+}
+
+.work-item p {
+    margin: 0;
+    color: #666;
+    text-align: left; 
+    flex-grow: 1; /*Permite que el texto ocupe el espacio disponible*/
+}
+
+.work-item .arrow {
+    font-size: 18px;
+    color: #999; /*Gris para la flecha*/
+    position: absolute; /*Posiciona la flecha a la derecha*/
+    right: 0;
+    margin-left: 20px; /*Espacio entre el texto y la flecha*/
+}

@@ -1,16 +1,44 @@
 /* Sidebar.css */
+
 aside {
-    background-color: #343a40;
-    color: white;
-    padding: 20px;
-    width: 200px;
-  }
-  
-  aside ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  aside ul li {
-    margin-bottom: 10px;
-  }
+  background-color: #ffffff;
+  color: #0D141C;
+  padding-left: 60px;
+  width: 350px;
+  margin-top: 60px;
+  font-size: 1.2em;
+}
+
+aside ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+aside ul li {
+  margin-bottom: 20px;
+}
+
+aside ul li a {
+  text-decoration: none;
+  color: #0D141C;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 1px;
+  transition: background-color 0.3s ease;
+}
+
+aside ul li a .icon {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+aside ul li a.active {
+  background-color: #E8EDF2; /* Color gris para el enlace activo */
+}
+
+aside ul li a:hover {
+  background-color: #E8EDF2; /* Color gris claro al pasar el ratón */
+}

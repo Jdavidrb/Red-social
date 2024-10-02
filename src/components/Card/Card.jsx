@@ -1,9 +1,9 @@
 import React from 'react';
 import './Card.css';
 
-const Card = ({ title, members, dueDate, image }) => {
+const Card = ({ title, members, dueDate, image, width, height }) => {
   return (
-    <div className="card">
+    <div className="card" style={{ width: width, height: height }}>
       <img src={image} alt={title} className="card-image" />
       <div className="card-content">
         <h3>{title}</h3>

@@ -10,7 +10,7 @@ function Header() {
     <header>
       <div className="logo">
         <img src={logoImage} alt="Logo" />
-        <span>Red Social</span>
+        <span>Protopia</span>
       </div>
       <div className="actions">
         <button>
@@ -23,6 +23,10 @@ function Header() {
       </div>
     </header>
   );
+
+
+  
 }
+
 
 export default Header;

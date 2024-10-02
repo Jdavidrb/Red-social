@@ -1,0 +1,19 @@
+.custom-input {
+    background-color: #F7FAFC; /* Fondo gris */
+    border: 1px solid #D1DBE8;
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 8px;
+    box-sizing: border-box;
+    
+    resize: none; /* Evita que el usuario cambie el tamaño del textarea */
+  }
+  
+  .custom-input::placeholder {
+    color: #4F7396; /* Color gris para el placeholder */
+  }
+  
+  textarea.custom-input {
+    height: auto; /* Permite que el textarea crezca según el contenido */
+    min-height: 80px; /* Altura mínima para el textarea */
+    vertical-align: top; /* Alinea el texto en la parte superior */
+  }
