@@ -1,8 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import CustomInput from '../../components/CustomInput'; // Ajusta la ruta según tu estructura de proyecto
 import './Create.css'; // Importa el archivo CSS
 
 function Create() {
+  const [imagePreview, setImagePreview] = useState(null);
+
+  const handleImageChange = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onloadend = () => setImagePreview(reader.result);
+      reader.readAsDataURL(file);
+    }
+  };
+
   return (
     <div className='Create'>
       <div className='title-description'> 
@@ -28,7 +39,38 @@ function Create() {
             isTextarea={true}
           />
         </div>
-        <button className='add-image-button'>Agregar Imagen</button>
+
+        {/* Input para la cantidad de colaboradores */}
+        <div className='input-group'>
+          <CustomInput 
+            type='number' 
+            width='400px' 
+            height='10px' 
+            placeholder='Number of Collaborators' 
+          />
+        </div>
+
+        {/* Texto descriptivo y selector de archivo */}
+        <p className="image-upload-text">Project image:</p>
+        <input
+          type="file"
+          id="image-upload"
+          className="image-upload-input"
+          accept="image/*"
+          onChange={handleImageChange}
+        />
+
+        {/* Vista previa de la imagen */}
+        {imagePreview && (
+          <div className="image-preview">
+            <img src={imagePreview} alt="Vista previa de la imagen" />
+          </div>
+        )}
+
+        {/* Botón de Crear Proyecto */}
+        <button type="submit" className="create-project-button">
+          Create Project
+        </button>
       </form>
     </div>
   );
