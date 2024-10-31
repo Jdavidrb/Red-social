@@ -1,0 +1,14 @@
+/* Explore.css */
+
+.Explore {
+    padding: 20px;
+    
+  }
+  
+  .posts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: 150px;
+  }
+
