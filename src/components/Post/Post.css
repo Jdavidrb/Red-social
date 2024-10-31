@@ -1,0 +1,64 @@
+/* Post.css */
+
+.post {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 100%;
+    max-width: 700px; /* Set a max-width for the post */
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .profile-image {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .images {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .post-image {
+    width: 100px; /* Set a default size for images */
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  .skills {
+    margin-bottom: 10px;
+  }
+  
+  .skills .skill {
+    display: inline-block;
+    background-color: #eee;
+    padding: 5px;
+    margin: 5px 5px 0 0;
+    border-radius: 3px;
+  }
+  
+  .actions button {
+    margin-right: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .actions button:hover {
+    background-color: #0056b3;
+  }
