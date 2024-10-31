@@ -4,52 +4,80 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start; /* Alineación a la izquierda */
+    align-items: flex-start; /* Cambiado a flex-start para mover el login hacia abajo */
     z-index: 1000;
+  }
+  
+  .container {
+    display: flex;
+    width: 100%;
+    height: 100%;
   }
   
   .login {
     background: white;
-    padding: 2rem;
-    border-radius: 8px;
+    padding: 5rem; /* Aumentado de 4rem a 5rem */
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 600px; /* Aumentado de 500px a 600px */
     text-align: center;
+    margin-left: 50px; /* Añadir margen a la izquierda para centrar más */
+    margin-top: 50px; /* Añadido margen superior para mover el login hacia abajo */
+    position: relative; /* Para que el pseudo-elemento se posicione correctamente */
+    z-index: 1; /* Para asegurarnos que el login esté por encima del degradado */
+  }
+  
+  .image-container {
+    flex: 1; /* Esto hace que el contenedor de la imagen ocupe el espacio restante */
+    background: url('../assets/images/vistaLogin.jpg') no-repeat center center; /* Cambia la ruta a tu imagen */
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+    position: relative; /* Para que el pseudo-elemento se posicione correctamente */
+  }
+  
+  .image-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Degradado negro con 50% de opacidad */
+    z-index: 0; /* Coloca el degradado detrás del contenido de la imagen */
   }
   
   .title {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem; /* Aumentado de 3rem a 3rem */
     color: #333;
-    font-size: 2rem;
-    margin-left: 30px;
+    font-size: 3.5rem; /* Aumentado de 3rem a 3.5rem */
   }
   
   .login label {
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem; /* Aumentado de 1rem a 1rem */
     color: #555;
+    font-size: 1.3rem; /* Aumentado de 1.2rem a 1.3rem */
   }
   
   .login input[type="text"],
   .login input[type="password"] {
     width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
+    padding: 1.2rem; /* Aumentado de 1rem a 1.2rem */
+    margin-bottom: 1.5rem;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-size: 1.3rem; /* Aumentado de 1.2rem a 1.3rem */
   }
   
   .login button {
     width: 100%;
-    padding: 0.5rem;
+    padding: 1.2rem; /* Aumentado de 1rem a 1.2rem */
     background-color: #007bff;
     border: none;
     border-radius: 4px;
     color: white;
-    font-size: 1rem;
+    font-size: 1.5rem; /* Se mantiene en 1.5rem */
     cursor: pointer;
   }
   
@@ -60,11 +88,13 @@
   .password-hint {
     display: block;
     margin-top: -0.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     color: #888;
-    font-size: 0.875rem;
+    font-size: 1rem; /* Aumentado de 1rem a 1rem */
   }
   
   .signup-link {
-    margin-top: 1rem;
+    margin-top: 2rem; /* Aumentado de 2rem a 2rem */
+    font-size: 1.2rem; /* Aumentado de 1.2rem a 1.2rem */
   }
+  

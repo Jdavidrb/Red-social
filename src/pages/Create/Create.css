@@ -1,28 +1,73 @@
-.Create{
-    text-align: left;
-}
-.input-group {
-    margin-bottom: 20px; /* Espacio entre los grupos de inputs */
-    margin-left: 50px;
-}
-.title-description{
-    margin-top: 60px;
-    margin-bottom: 40px;
-    padding-left: 50px;
-    padding-right: 200px;
-}
-.add-image-button {
-    background-color: #f0f0f0; /* Fondo gris */
-    border: 1px solid #ccc;
-    border-radius: 8px; /* Bordes redondeados */
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
+/* Profile.css */
+
+.Profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff; 
     color: #333;
-    transition: background-color 0.3s ease;
-    margin-left: 50px;
-  }
-  
-  .add-image-button:hover {
-    background-color: #e0e0e0; /* Fondo gris más oscuro al pasar el ratón */
-  }
+    padding: 20px;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: -370px;
+    margin-left: 150px;
+}
+
+.profile-info h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #121417;
+}
+
+.profile-info p {
+    margin: 5px 0 0;
+    color: #666;
+}
+
+.profile-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.edit-button, .share-button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.edit-button {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.share-button {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.projects, .skills, .work-experience {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
