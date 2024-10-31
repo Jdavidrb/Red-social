@@ -1,1 +1,36 @@
-
+.App {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .sidebar {
+    width: 200px; /* Reducido de 250px a 200px */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #f8f9fa;
+    border-right: 1px solid #dee2e6;
+    overflow-y: auto;
+  }
+  
+  .content-app {
+    margin-left: 10px; /* Reducido de 250px a 200px */
+    padding: 20px;
+    width: calc(100% - 200px); /* Reducido de 250px a 200px */
+    overflow-y: auto;
+  }
+  
+  .header {
+    position: fixed;
+    top: 0;
+    left: 200px; /* Reducido de 250px a 200px */
+    width: calc(100% - 200px); /* Reducido de 250px a 200px */
+    border-bottom: 1px solid #dee2e6;
+    z-index: 1000;
+  }
+  
+  .main-content {
+    padding-top: 60px; /* Height of the header */
+  }

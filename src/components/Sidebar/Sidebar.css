@@ -1,12 +1,13 @@
 /* Sidebar.css */
 
 aside {
-  background-color: #ffffff;
-  color: #0D141C;
-  padding-left: 60px;
-  width: 350px;
-  margin-top: 60px;
-  font-size: 1.2em;
+    background-color: #ffffff;
+    color: #0D141C;
+    padding-left: 150px;
+    width: 200px; /* Reducido de 250px a 200px */
+    padding-top: 60px;
+    font-size: 1.1em;
+    border-right: 1px solid #E8EDF2; /* Agregado borde derecho */
 }
 
 aside ul {
@@ -17,7 +18,9 @@ aside ul {
 
 aside ul li {
   margin-bottom: 20px;
+  border-radius: 10px;
 }
+
 
 aside ul li a {
   text-decoration: none;
@@ -25,20 +28,19 @@ aside ul li a {
   display: flex;
   align-items: center;
   padding: 10px;
-  border-radius: 1px;
+  border-radius: 10px;
   transition: background-color 0.3s ease;
 }
 
 aside ul li a .icon {
   margin-right: 10px;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
 }
 
-aside ul li a.active {
-  background-color: #E8EDF2; /* Color gris para el enlace activo */
-}
+
 
 aside ul li a:hover {
   background-color: #E8EDF2; /* Color gris claro al pasar el ratón */
+  border-radius: 10px;
 }
