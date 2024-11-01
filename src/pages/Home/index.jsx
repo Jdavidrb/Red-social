@@ -10,7 +10,6 @@ import img3 from '../../assets/images/project3.png'; // Importa las imágenes
 function Home() {
   return (
     <div className='Home'>
-      <h1 className='title'>My projects</h1>
       <div className='my-projects'>
         <Card 
           title="Project Alpha" 
